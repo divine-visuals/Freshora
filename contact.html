@@ -209,6 +209,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 22px;
+    min-width: 0;
 }
 
 .info-card {
@@ -338,6 +339,9 @@ header {
 
 .map-card {
     padding: 12px;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .map-image {
@@ -346,6 +350,7 @@ header {
     object-fit: cover;
     border-radius: 12px;
     display: block;
+    max-width: 100%;
 }
 
 .map-location {
@@ -370,6 +375,7 @@ header {
     padding: 35px;
     border-radius: 20px;
     border: 1px solid #e7efe6;
+    min-width: 0;
 }
 
 .form-top {
@@ -734,6 +740,12 @@ footer {
 
 @media (max-width: 900px) {
 
+    .map-image {
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+    }
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -761,6 +773,17 @@ footer {
 /* MOBILE */
 
 @media (max-width: 650px) {
+
+    .map-image {
+        width: 100%;
+        object-fit: cover;
+        height: 220px;
+    }
+
+    .map-location {
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
 
     .container {
         width: 91%;
@@ -948,6 +971,16 @@ footer {
 }
 
 @media (max-width: 380px) {
+     .map-image {
+        width: 100%;
+        object-fit: cover;
+        height: 220px;
+    }
+
+    .map-location {
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
 
     .nav-right {
         margin-right: 10px;
@@ -1164,7 +1197,7 @@ footer {
 
                 <!-- Replace this with your actual map image -->
                 <img
-                    src="/assets/WhatsApp Image 2026-10-30 at 10.24.21 PM.jpeg"
+                    src="/assets/WhatsApp Image 2026-10-30 at 10.24.21 PM.jpeg" class="map-image"
                 >
 
                 <div class="map-location">
