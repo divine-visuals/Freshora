@@ -1,0 +1,2286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore Freshora's handcrafted beverages, artisanal foods and natural pantry products.">
+
+    <title>Freshora | Our Products</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<style>
+
+/* =========================
+   BASIC PAGE SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #173b28;
+    background: #eff9ef;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.page-width {
+    width: 92%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    height: 76px;
+    background: #f5fcf4;
+    border-bottom: 1px solid #e0eee0;
+    position: relative;
+    z-index: 100;
+}
+
+.header-inner {
+    width: 92%;
+    max-width: 1240px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #17452b;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+    white-space: nowrap;
+}
+
+.brand i {
+    font-size: 18px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+
+    /* margin-left: auto;
+    margin-right: 32px; */
+}
+
+.main-nav a {
+    font-size: 14px;
+    color: #263c2d;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    color: #4c8b5b;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.top-button {
+    background: #064322;
+    color: white;
+
+    padding: 12px 19px;
+    border-radius: 8px;
+
+    font-size: 11px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.top-button:hover {
+    background: #276c3d;
+}
+
+.account-button {
+    width: 35px;
+    height: 35px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+    background: #16482c;
+    color: white;
+    font-size: 12px;
+}
+
+/* HAMBURGER */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+    cursor: pointer;
+}
+
+
+/* =========================
+   PRODUCTS HERO SECTION
+========================= */
+
+.products-hero {
+    background: #eaf6e9;
+    padding: 40px 0 34px;
+    text-align: center;
+}
+
+.products-hero-inner {
+    width: 92%;
+    max-width: 950px;
+    margin: auto;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 13px;
+    margin-bottom: 10px;
+
+    border-radius: 30px;
+    background: #dcebdd;
+
+    color: #365d42;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.products-hero h1 {
+    color: #143c25;
+    font-size: clamp(36px, 5vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -2px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.products-hero p {
+    max-width: 550px;
+    margin: 0 auto;
+
+    color: #647668;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   PRODUCT FILTERS
+========================= */
+
+.filter-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 7px;
+    margin-top: 15px;
+}
+
+.filter-list a {
+    padding: 7px 17px;
+
+    border-radius: 30px;
+    background: #ffffff;
+
+    color: #334c39;
+    font-size: 10px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.filter-list a:hover,
+.filter-list a.active {
+    background: #064322;
+    color: white;
+}
+
+
+/* =========================
+   TRUST BADGES
+========================= */
+
+.product-trust {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    max-width: 900px;
+    margin: 25px auto 0;
+}
+
+.trust-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    background: rgba(255,255,255,0.75);
+    border: 1px solid #edf4ed;
+    border-radius: 9px;
+
+    text-align: left;
+}
+
+.trust-box i {
+    color: #245a35;
+    font-size: 17px;
+}
+
+.trust-box strong {
+    display: block;
+    color: #263e2d;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.trust-box small {
+    display: block;
+    color: #738176;
+    font-size: 9px;
+    margin-top: 2px;
+}
+
+
+/* =========================
+   PRODUCT SECTION
+========================= */
+
+.product-section {
+    background: #f0faf0;
+    padding: 35px 0 55px;
+}
+
+.product-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-bottom: 19px;
+}
+
+.product-heading h2 {
+    color: #193b27;
+    font-size: 21px;
+    letter-spacing: -0.6px;
+    margin-bottom: 3px;
+}
+
+.product-heading p {
+    color: #69786b;
+    font-size: 10px;
+}
+
+.selected-products {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 8px 12px;
+    border-radius: 30px;
+
+    background: #e3f0e3;
+    color: #315b3b;
+
+    font-size: 9px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.product-card {
+    min-width: 0;
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid #e5eee4;
+    border-radius: 11px;
+
+    box-shadow: 0 3px 12px rgba(28, 63, 36, 0.035);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 22px rgba(28, 63, 36, 0.10);
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-image {
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+    background: #e1eee0;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+
+/* IMAGE LABELS */
+
+.product-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    padding: 5px 9px;
+    border-radius: 20px;
+
+    background: rgba(250, 255, 249, 0.95);
+    color: #274a31;
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.product-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    padding: 5px 9px;
+    border-radius: 20px;
+
+    background: #c8eac8;
+    color: #214b2d;
+
+    font-size: 8px;
+    font-weight: 600;
+}
+
+
+/* PRODUCT DETAILS */
+
+.product-info {
+    padding: 13px 13px 12px;
+}
+
+.category {
+    display: inline-block;
+    color: #65806a;
+
+    font-size: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin-bottom: 5px;
+}
+
+.product-info h3 {
+    color: #203c29;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.3px;
+
+    margin-bottom: 5px;
+}
+
+.product-info > p {
+    color: #788579;
+    font-size: 9px;
+    line-height: 1.7;
+
+    min-height: 43px;
+
+    margin-bottom: 10px;
+}
+
+
+/* PRODUCT PRICE */
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+
+    padding-top: 9px;
+    border-top: 1px solid #edf1ed;
+}
+
+.product-price small {
+    display: block;
+    color: #788579;
+    font-size: 9px;
+    margin-bottom: 2px;
+}
+
+.product-price strong {
+    display: block;
+    color: #193c25;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* VIEW DETAILS BUTTON */
+
+.product-bottom a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 8px 11px;
+    border-radius: 6px;
+
+    background: #e4f0e4;
+    color: #20472d;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.product-bottom a:hover {
+    background: #064322;
+    color: white;
+}
+
+
+/* =========================
+   WHOLESALE BANNER
+========================= */
+
+.callout-section {
+    background: #f0faf0;
+    padding: 0 0 65px;
+}
+
+.callout {
+    min-height: 230px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    padding: 35px 40px;
+
+    border-radius: 11px;
+    background: #003d1d;
+
+    box-shadow: 0 10px 20px rgba(20, 61, 31, 0.12);
+}
+
+.callout-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.delivery-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 6px 10px;
+    border-radius: 20px;
+
+    color: #c5e4c9;
+    background: #14552f;
+
+    font-size: 9px;
+    margin-bottom: 12px;
+}
+
+.callout h2 {
+    color: white;
+    font-size: clamp(25px, 3.5vw, 35px);
+    line-height: 1.2;
+    letter-spacing: -1px;
+
+    margin-bottom: 9px;
+}
+
+.callout p {
+    color: #c1d8c5;
+    font-size: 10px;
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.callout-features {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.callout-features span {
+    color: #d5e9d7;
+    font-size: 9px;
+}
+
+.callout-features i {
+    margin-right: 4px;
+}
+
+.callout-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 13px 19px;
+    border-radius: 7px;
+
+    background: #f3fbf1;
+    color: #123e24;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    white-space: nowrap;
+    transition: 0.3s;
+
+    position: relative;
+    z-index: 2;
+}
+
+.callout-button:hover {
+    background: #dceedd;
+    transform: translateY(-2px);
+}
+
+.callout-decoration {
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    right: -25px;
+    bottom: -145px;
+
+    border-radius: 50%;
+
+    background: rgba(106, 165, 112, 0.19);
+    transform: rotate(-25deg) scaleX(1.5);
+}
+
+.callout-decoration::before {
+    content: "";
+
+    position: absolute;
+    width: 170px;
+    height: 170px;
+
+    right: 75px;
+    bottom: 85px;
+
+    border-radius: 90% 0 90% 0;
+
+    background: rgba(106, 165, 112, 0.12);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #eaf6e9;
+    padding: 38px 0 17px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 0.8fr 1.25fr 1.15fr;
+
+    gap: 35px;
+    padding-bottom: 27px;
+}
+
+.footer-about .brand {
+    font-size: 17px;
+}
+
+.footer-about > p {
+    max-width: 250px;
+
+    color: #617365;
+    font-size: 10px;
+    line-height: 1.75;
+
+    margin: 13px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 8px;
+}
+
+.social-links a {
+    width: 29px;
+    height: 29px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    color: #365b3e;
+    background: #dcebdd;
+
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #16482c;
+    color: white;
+}
+
+.footer-column h3 {
+    color: #253e2c;
+    font-size: 12px;
+    margin: 5px 0 13px;
+}
+
+.footer-column > a,
+.footer-column > p {
+    display: block;
+
+    color: #617365;
+    font-size: 10px;
+    line-height: 1.65;
+
+    margin-bottom: 7px;
+}
+
+.footer-column a:hover {
+    color: #276c3d;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contact-details i {
+    color: #456f4b;
+    margin-top: 3px;
+}
+
+.hours p {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.hours b {
+    color: #405b46;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding-top: 17px;
+    border-top: 1px solid #d8e8d8;
+
+    color: #647568;
+    font-size: 9px;
+}
+
+
+/* =========================
+   TABLET RESPONSIVENESS
+========================= */
+
+@media (max-width: 950px) {
+
+    .main-nav {
+        gap: 17px;
+        margin-right: 18px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .product-image {
+        height: 240px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 650px) {
+
+    /* HEADER */
+
+    .site-header {
+        height: 65px;
+    }
+
+    .header-inner {
+        width: 90%;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    .menu-button {
+        display: grid;
+        place-items: center;
+
+        order: 3;
+
+        width: 37px;
+        height: 37px;
+
+        color: #16482c;
+        background: #e5f2e4;
+
+        border-radius: 7px;
+
+        font-size: 17px;
+    }
+
+    .menu-button .fa-xmark {
+        display: none;
+    }
+
+    .header-actions {
+        margin-left: auto;
+        margin-right: 12px;
+    }
+
+    .top-button {
+        padding: 10px 12px;
+        font-size: 9px;
+    }
+
+    .account-button {
+        display: none;
+    }
+
+
+    /* MOBILE NAVIGATION */
+
+    .main-nav {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+        margin: 0;
+
+        padding: 8px 5% 13px;
+
+        background: #f5fcf4;
+        border-top: 1px solid #e0eee0;
+
+        box-shadow: 0 10px 18px rgba(20, 55, 28, 0.09);
+
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-8px);
+
+        pointer-events: none;
+
+        transition: 0.25s ease;
+    }
+
+    .main-nav a {
+        padding: 13px 3px;
+
+        border-bottom: 1px solid #e6efe5;
+
+        font-size: 13px;
+    }
+
+    #menu-toggle:checked ~ .main-nav {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    #menu-toggle:checked + .menu-button .fa-bars {
+        display: none;
+    }
+
+    #menu-toggle:checked + .menu-button .fa-xmark {
+        display: block;
+    }
+
+
+    /* HERO */
+
+    .products-hero {
+        padding: 35px 0 30px;
+    }
+
+    .products-hero-inner {
+        width: 90%;
+    }
+
+    .products-hero h1 {
+        font-size: 37px;
+        letter-spacing: -1.7px;
+    }
+
+    .products-hero p {
+        font-size: 11px;
+    }
+
+
+    /* FILTERS */
+
+    .filter-list {
+        gap: 6px;
+    }
+
+    .filter-list a {
+        padding: 7px 12px;
+        font-size: 9px;
+    }
+
+
+    /* TRUST BOXES */
+
+    .product-trust {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9px;
+        margin-top: 21px;
+    }
+
+    .trust-box {
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .trust-box strong {
+        font-size: 9px;
+    }
+
+    .trust-box small {
+        font-size: 8px;
+    }
+
+
+    /* PRODUCT SECTION */
+
+    .product-section {
+        padding: 32px 0 43px;
+    }
+
+    .page-width {
+        width: 90%;
+    }
+
+    .product-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+
+        margin-bottom: 17px;
+    }
+
+    .product-heading h2 {
+        font-size: 20px;
+    }
+
+
+    /* PRODUCT GRID */
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .product-image {
+        height: 165px;
+    }
+
+    .product-info {
+        padding: 11px 10px;
+    }
+
+    .product-info h3 {
+        font-size: 12px;
+    }
+
+    .product-info > p {
+        font-size: 9px;
+        min-height: 58px;
+    }
+
+    .product-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .product-bottom a {
+        width: 100%;
+    }
+
+    .product-price strong {
+        font-size: 14px;
+    }
+
+
+    /* WHOLESALE */
+
+    .callout-section {
+        padding-bottom: 45px;
+    }
+
+    .callout {
+        min-height: 0;
+
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 20px;
+        padding: 30px 23px;
+    }
+
+    .callout h2 {
+        font-size: 27px;
+    }
+
+    .callout p {
+        font-size: 10px;
+    }
+
+    .callout-button {
+        width: 100%;
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 18px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 7px;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 370px) {
+
+    .header-actions {
+        margin-right: 8px;
+    }
+
+    .top-button {
+        padding: 9px 8px;
+        font-size: 8px;
+    }
+
+    .products-hero h1 {
+        font-size: 32px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+
+    .product-info h3 {
+        font-size: 14px;
+    }
+
+    .product-info > p {
+        min-height: 0;
+    }
+
+    .product-bottom {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .product-bottom a {
+        width: auto;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a class="brand" href="index.html">
+
+            <i class="fa-brands fa-envira"></i>
+
+            <span>Freshora</span>
+
+        </a>
+
+
+        <!-- HAMBURGER CHECKBOX -->
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-button">
+
+            <i class="fa-solid fa-bars"></i>
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </label>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="#">Products</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <a class="top-button" href="#products">
+
+                Explore Products
+
+            </a>
+
+            <a class="account-button" href="#contact">
+
+                <i class="fa-solid fa-user"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+     PRODUCTS HERO
+========================= -->
+
+<section class="products-hero">
+
+    <div class="products-hero-inner">
+
+        <div class="eyebrow">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            ARTISANAL RESERVE · PURE HARVEST
+
+        </div>
+
+
+        <h1>Our Products</h1>
+
+
+        <p>
+
+            Handcrafted refreshments, artisanal foods, and
+            nourishing pantry treats created with pure natural
+            ingredients.
+
+        </p>
+
+
+        <!-- PRODUCT FILTERS -->
+
+        <div class="filter-list">
+
+            <a href="#products" class="active">
+
+                All Products
+
+            </a>
+
+            <a href="#food">
+
+                Food
+
+            </a>
+
+            <a href="#beverages">
+
+                Beverages
+
+            </a>
+
+            <a href="#snacks">
+
+                Snacks
+
+            </a>
+
+        </div>
+
+
+        <!-- TRUST BADGES -->
+
+        <div class="product-trust">
+
+
+            <div class="trust-box">
+
+                <i class="fa-solid fa-certificate"></i>
+
+                <div>
+
+                    <strong>100% Certified</strong>
+
+                    <small>Organic ingredients</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="trust-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <div>
+
+                    <strong>Small Batches</strong>
+
+                    <small>Brewed & baked daily</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="trust-box">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <div>
+
+                    <strong>Zero Additives</strong>
+
+                    <small>No refined sugars</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="trust-box">
+
+                <i class="fa-solid fa-truck"></i>
+
+                <div>
+
+                    <strong>Cold Sealed</strong>
+
+                    <small>Optimal bio-vitality</small>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ALL PRODUCTS
+========================= -->
+
+<section class="product-section" id="products">
+
+    <div class="page-width">
+
+
+        <!-- SECTION HEADING -->
+
+        <div class="product-heading">
+
+            <div>
+
+                <h2>Artisanal Pantry &amp; Cellar</h2>
+
+                <p>
+
+                    Showing seasonal hand-crafted provisions
+                    ready for delivery.
+
+                </p>
+
+            </div>
+
+
+            <div class="selected-products">
+
+                <i class="fa-solid fa-box"></i>
+
+                8 Selected Provisions
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT GRID -->
+
+        <div class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <article class="product-card" id="beverages">
+
+                <div class="product-image">
+
+                    <img
+                        src="/assets/product-1.jpg"
+                        alt=""
+                    >
+
+                    <span class="product-tag">
+
+                        BEVERAGES
+
+                    </span>
+
+                    <span class="product-label">
+
+                        Cold Fermented
+
+                    </span>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="category">
+
+                        Fermented Drink
+
+                    </span>
+
+                    <h3>
+
+                        Sparkling Citrus Kombucha
+
+                    </h3>
+
+                    <p>
+
+                        Live probiotic raw green tea infusion
+                        with blood orange, bergamot peel and
+                        natural citrus.
+
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <div class="product-price">
+
+                            <small>Price</small>
+
+                            <strong>$4.95</strong>
+
+                        </div>
+
+
+                        <a href="#contact">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="/assets/product-2.jpg"
+                        alt="Cold Pressed Cucumber Mint"
+                    >
+
+                    <span class="product-tag">
+
+                        BEVERAGES
+
+                    </span>
+
+                    <span class="product-label">
+
+                        Hydration
+
+                    </span>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="category">
+
+                        Fresh Juice
+
+                    </span>
+
+                    <h3>
+
+                        Cold-Pressed Cucumber Mint
+
+                    </h3>
+
+                    <p>
+
+                        Crisp English greenhouse cucumbers,
+                        sweet spearmint leaves and refreshing
+                        natural ingredients.
+
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <div class="product-price">
+
+                            <small>Price</small>
+
+                            <strong>$5.50</strong>
+
+                        </div>
+
+
+                        <a href="#contact">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="/assets/product-4.jpg"
+                        alt="Wild Berry Botanical Soda"
+                    >
+
+                    <span class="product-tag">
+
+                        BEVERAGES
+
+                    </span>
+
+                    <span class="product-label">
+
+                        Botanical
+
+                    </span>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="category">
+
+                        Herbal Soda
+
+                    </span>
+
+                    <h3>
+
+                        Wild Berry Botanical Soda
+
+                    </h3>
+
+                    <p>
+
+                        Macerated aromatic berries and forest
+                        bilberries infused with crushed juniper
+                        and botanicals.
+
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <div class="product-price">
+
+                            <small>Price</small>
+
+                            <strong>$4.25</strong>
+
+                        </div>
+
+
+                        <a href="#contact">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 4 -->
+
+            <article class="product-card" id="food">
+
+                <div class="product-image">
+
+                    <img
+                        src="/assets/product-5.jpg"
+                        alt="Artisan Rosemary Sourdough"
+                    >
+
+                    <span class="product-tag">
+
+                        FOOD
+
+                    </span>
+
+                    <span class="product-label">
+
+                        Stone Baked
+
+                    </span>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="category">
+
+                        Artisan Bakery
+
+                    </span>
+
+                    <h3>
+
+                        Artisan Rosemary Sourdough
+
+                    </h3>
+
+                    <p>
+
+                        36-hour slow cold fermentation with
+                        ancient heritage grains and garden
+                        rosemary.
+
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <div class="product-price">
+
+                            <small>Price</small>
+
+                            <strong>$6.50</strong>
+
+                        </div>
+
+
+                        <a href="#contact">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 5 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="/assets/product-6.jpg"
+                        alt="Basil Pesto Crostini Kit"
+                    >
+
+                    <span class="product-tag">
+
+                        FOOD
+
+                    </span>
+
+                    <span class="product-label">
+
+                        Pantry Kit
+
+                    </span>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="category">
+
+                        Pantry Essentials
+
+                    </span>
+
+                    <h3>
+
+                        Basil Pesto Crostini Kit
+
+                    </h3>
+
+                    <p>
+
+                        Sweet Genovese basil pesto, toasted
+                        Mediterranean pine nuts and
+                        Parmigiano cheese.
+
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <div class="product-price">
+
+                            <small>Price</small>
+
+                            <strong>$9.20</strong>
+
+                        </div>
+
+
+                        <a href="#contact">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 6 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="/assets/product-7.jpg"
+                        alt="Truffle and Herb Olive Oil"
+                    >
+
+                    <span class="product-tag">
+
+                        FOOD
+
+                    </span>
+
+                    <span class="product-label">
+
+                        Reserve
+
+                    </span>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="category">
+
+                        Artisan Pantry
+
+                    </span>
+
+                    <h3>
+
+                        Truffle &amp; Herb Olive Oil
+
+                    </h3>
+
+                    <p>
+
+                        Cold-extracted Koroneiki extra virgin
+                        olive oil steeped with black winter
+                        truffle and herbs.
+
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <div class="product-price">
+
+                            <small>Price</small>
+
+                            <strong>$14.00</strong>
+
+                        </div>
+
+
+                        <a href="#contact">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 7 -->
+
+            <article class="product-card" id="snacks">
+
+                <div class="product-image">
+
+                    <img
+                        src="/assets/product-8.jpg"
+                        alt="Honey Roasted Granola"
+                    >
+
+                    <span class="product-tag">
+
+                        SNACKS
+
+                    </span>
+
+                    <span class="product-label">
+
+                        Slow Roasted
+
+                    </span>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="category">
+
+                        Healthy Snacks
+
+                    </span>
+
+                    <h3>
+
+                        Honey Roasted Granola
+
+                    </h3>
+
+                    <p>
+
+                        Whole sprouted oats, roasted almond
+                        clusters, wildflower honey and
+                        natural seeds.
+
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <div class="product-price">
+
+                            <small>Price</small>
+
+                            <strong>$8.50</strong>
+
+                        </div>
+
+
+                        <a href="#contact">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 8 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="/assets/product-9.jpg"
+                        alt="Fig and Pistachio Bites"
+                    >
+
+                    <span class="product-tag">
+
+                        SNACKS
+
+                    </span>
+
+                    <span class="product-label">
+
+                        Nutrient Dense
+
+                    </span>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <span class="category">
+
+                        Natural Snacks
+
+                    </span>
+
+                    <h3>
+
+                        Fig &amp; Pistachio Bites
+
+                    </h3>
+
+                    <p>
+
+                        Whole sun-cured Turkish figs, roasted
+                        Ante pistachios and Ceylon cinnamon
+                        blended together.
+
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <div class="product-price">
+
+                            <small>Price</small>
+
+                            <strong>$6.80</strong>
+
+                        </div>
+
+
+                        <a href="#contact">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHOLESALE BANNER
+========================= -->
+
+<section class="callout-section" id="contact">
+
+    <div class="page-width">
+
+        <div class="callout">
+
+
+            <div class="callout-content">
+
+                <span class="delivery-label">
+
+                    <i class="fa-solid fa-gem"></i>
+
+                    WHOLESALE &amp; HOSPITALITY
+
+                </span>
+
+
+                <h2>
+
+                    Looking for bulk wholesale or
+                    catering?
+
+                </h2>
+
+
+                <p>
+
+                    We curate fresh beverage bars, pantry
+                    crates, and artisanal food spreads for
+                    corporate spaces, luxury weddings, and
+                    independent cafes across the region.
+
+                </p>
+
+
+                <div class="callout-features">
+
+                    <span>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Custom Menus
+
+                    </span>
+
+
+                    <span>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Cold Refrigerated Dispatch
+
+                    </span>
+
+
+                    <span>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Flexible Tier Pricing
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="mailto:hello@freshora.com" class="callout-button">
+
+                Inquire for Catering
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <div class="callout-decoration"></div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="page-width">
+
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-about">
+
+                <a class="brand" href="index.html">
+
+                    <i class="fa-brands fa-envira"></i>
+
+                    <span>Freshora</span>
+
+                </a>
+
+
+                <p>
+
+                    Fresh Flavours, Better Living.
+                    Deliciously crafted organic refreshments
+                    and wholesome pantry delights.
+
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#contact" aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#contact" aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a href="#contact" aria-label="Share">
+
+                        <i class="fa-solid fa-share-nodes"></i>
+
+                    </a>
+
+
+                    <a href="mailto:hello@freshora.com" aria-label="Email">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="about.html">About Us</a>
+
+                <a href="contact.html">Contact Us</a>
+
+            </div>
+
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="footer-column contact-details">
+
+                <h3>Contact Info</h3>
+
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +1 (800) 555-3737
+
+                </p>
+
+
+                <p>
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    care@freshora.com
+
+                </p>
+
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    742 Botanical Orchard Way,
+                    Suite 100, Portland, OR
+
+                </p>
+
+            </div>
+
+
+
+            <!-- OPENING HOURS -->
+
+            <div class="footer-column hours">
+
+                <h3>Opening Hours</h3>
+
+
+                <p>
+
+                    <span>Mon–Fri</span>
+
+                    <b>7:00 AM – 7:00 PM</b>
+
+                </p>
+
+
+                <p>
+
+                    <span>Saturday</span>
+
+                    <b>8:00 AM – 6:00 PM</b>
+
+                </p>
+
+
+                <p>
+
+                    <span>Sunday</span>
+
+                    <b>9:00 AM – 4:00 PM</b>
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <span>
+
+                © 2025 Freshora Artisanal Food &amp; Beverages.
+                All rights reserved.
+
+            </span>
+
+
+            <span>
+
+                Crafted with organic care and transparent vitality.
+
+            </span>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,2852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover the Freshora story, our mission, artisans, sustainable farming and commitment to natural food.">
+
+    <title>Freshora | About Us</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<style>
+
+/* =========================
+   BASIC PAGE SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #173b28;
+    background: #eff9ef;
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.page-width {
+    width: 92%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 45px 0;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    height: 76px;
+    background: #f5fcf4;
+    border-bottom: 1px solid #e0eee0;
+    position: relative;
+    z-index: 100;
+}
+
+.header-inner {
+    width: 92%;
+    max-width: 1240px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #17452b;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+    white-space: nowrap;
+}
+
+.brand i {
+    font-size: 18px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+
+    /* margin-left: auto;
+    margin-right: 32px; */
+}
+
+.main-nav a {
+    font-size: 14px;
+    color: #263c2d;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    color: #4c8b5b;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.top-button {
+    background: #064322;
+    color: white;
+
+    padding: 12px 19px;
+    border-radius: 8px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.top-button:hover {
+    background: #276c3d;
+}
+
+.account-button {
+    width: 35px;
+    height: 35px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+    background: #16482c;
+    color: white;
+    font-size: 12px;
+}
+
+
+/* HAMBURGER */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+    cursor: pointer;
+}
+
+
+/* =========================
+   ABOUT HERO SECTION
+========================= */
+
+.about-hero {
+    background: #eff9ef;
+    padding: 38px 0 42px;
+}
+
+.about-hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+    align-items: center;
+    gap: 45px;
+}
+
+
+/* LEFT CONTENT */
+
+.about-copy {
+    min-width: 0;
+}
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #47724e;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.45px;
+
+    margin-bottom: 8px;
+}
+
+.about-copy h1 {
+    color: #173b27;
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.12;
+    letter-spacing: -1.8px;
+
+    margin-bottom: 25px;
+}
+
+.story-label {
+    display: block;
+
+    color: #66806a;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 8px;
+}
+
+.about-copy h2 {
+    color: #1b3624;
+    font-size: clamp(20px, 2.4vw, 27px);
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+
+    margin-bottom: 12px;
+}
+
+.about-copy > p {
+    color: #68796b;
+    font-size: 10px;
+    line-height: 1.9;
+
+    margin-bottom: 10px;
+}
+
+
+/* ABOUT STATISTICS */
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+
+    margin-top: 18px;
+}
+
+.about-stat {
+    padding: 11px 10px;
+
+    background: #e5f3e5;
+    border-radius: 8px;
+}
+
+.about-stat strong {
+    display: block;
+
+    color: #17472a;
+    font-size: 19px;
+    line-height: 1.2;
+
+    margin-bottom: 3px;
+}
+
+.about-stat span {
+    display: block;
+
+    color: #637767;
+    font-size: 8px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   ABOUT IMAGE
+========================= */
+
+.about-visual {
+    min-width: 0;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.about-image {
+    height: 350px;
+
+    overflow: hidden;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(20, 55, 28, 0.10);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-caption {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 9px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    color: #34543a;
+    font-size: 9px;
+    font-weight: 600;
+
+    border-radius: 12px 12px 0 0;
+}
+
+
+/* FLOATING COMMUNITY CARD */
+
+.community-card {
+    position: absolute;
+
+    left: 15px;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 15px;
+
+    background: #ffffff;
+    border-radius: 9px;
+
+    box-shadow: 0 7px 20px rgba(20, 55, 28, 0.13);
+}
+
+.community-icon {
+    width: 35px;
+    height: 35px;
+
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    background: #e2f2e2;
+    color: #27683b;
+
+    border-radius: 50%;
+}
+
+.community-card strong {
+    display: block;
+    color: #203a29;
+    font-size: 11px;
+
+    margin-bottom: 3px;
+}
+
+.community-card small {
+    display: block;
+    color: #778579;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   MISSION SECTION
+========================= */
+
+.mission-section {
+    padding: 12px 0 25px;
+}
+
+.mission-box {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 220px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 35px 40px;
+
+    background: #164b2c;
+    border-radius: 10px;
+
+    box-shadow: 0 9px 20px rgba(20, 61, 31, 0.13);
+}
+
+.mission-content {
+    max-width: 680px;
+    position: relative;
+    z-index: 2;
+}
+
+.mission-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #c5e4c9;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    margin-bottom: 13px;
+}
+
+.mission-box h2 {
+    color: #ffffff;
+
+    font-size: clamp(22px, 3vw, 34px);
+    line-height: 1.25;
+    letter-spacing: -1px;
+
+    margin-bottom: 12px;
+}
+
+.mission-box p {
+    color: #c1d8c5;
+    font-size: 10px;
+}
+
+.mission-decoration {
+    position: absolute;
+
+    right: 10px;
+    top: 0;
+
+    color: rgba(255,255,255,0.08);
+    font-size: 130px;
+
+    transform: rotate(-25deg);
+}
+
+
+/* =========================
+   CRAFT SECTION
+========================= */
+
+.craft-section {
+    background: #eff9ef;
+    padding: 42px 0 48px;
+}
+
+.center-heading {
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.center-heading .section-label {
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.center-heading h2 {
+    color: #193b27;
+
+    font-size: clamp(24px, 3vw, 32px);
+    letter-spacing: -1px;
+
+    margin-bottom: 7px;
+}
+
+.center-heading p {
+    max-width: 600px;
+    margin: auto;
+
+    color: #6b7c6d;
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+
+/* CRAFT CARDS */
+
+.craft-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.craft-card {
+    min-width: 0;
+
+    padding: 20px 18px;
+
+    background: #ffffff;
+    border: 1px solid #e3eee2;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(28, 63, 36, 0.04);
+
+    transition: 0.3s;
+}
+
+.craft-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 9px 20px rgba(28, 63, 36, 0.08);
+}
+
+.craft-icon {
+    width: 39px;
+    height: 39px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 8px;
+
+    color: #27643a;
+    background: #e7f3e6;
+
+    font-size: 16px;
+
+    margin-bottom: 13px;
+}
+
+.craft-number {
+    display: block;
+
+    color: #7a927c;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 6px;
+}
+
+.craft-card h3 {
+    color: #263f2d;
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+.craft-card p {
+    color: #718073;
+    font-size: 9px;
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+}
+
+.craft-card ul {
+    list-style: none;
+}
+
+.craft-card li {
+    color: #536b57;
+    font-size: 8px;
+    line-height: 1.8;
+}
+
+.craft-card li i {
+    color: #3c7948;
+    margin-right: 5px;
+}
+
+
+/* =========================
+   ARTISANS SECTION
+========================= */
+
+.artisans-section {
+    background: #eaf6e9;
+    padding: 38px 0 40px;
+}
+
+.artisans-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 25px;
+
+    margin-bottom: 20px;
+}
+
+.artisans-heading h2 {
+    color: #193b27;
+    font-size: clamp(23px, 3vw, 31px);
+    letter-spacing: -1px;
+}
+
+.artisans-heading p {
+    max-width: 400px;
+
+    color: #687a6b;
+    font-size: 9px;
+    line-height: 1.8;
+}
+
+
+/* ARTISAN GRID */
+
+.artisan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.artisan-card {
+    min-width: 0;
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid #e2ece1;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.artisan-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 9px 20px rgba(28, 63, 36, 0.09);
+}
+
+.artisan-image {
+    height: 175px;
+    overflow: hidden;
+}
+
+.artisan-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.artisan-card:hover .artisan-image img {
+    transform: scale(1.05);
+}
+
+.artisan-info {
+    padding: 13px;
+}
+
+.artisan-role {
+    display: block;
+
+    color: #6b8b70;
+    font-size: 8px;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.artisan-info h3 {
+    color: #243e2c;
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.artisan-info p {
+    color: #758276;
+    font-size: 9px;
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+.artisan-link {
+    color: #365f3d;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.artisan-link i {
+    margin-right: 4px;
+}
+
+
+/* CERTIFICATION STRIP */
+
+.certification-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    padding: 14px 17px;
+    margin-top: 17px;
+
+    background: #e0eee0;
+    border-radius: 8px;
+}
+
+.certification-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.certification-icon {
+    width: 35px;
+    height: 35px;
+
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    background: #164b2c;
+    color: #ffffff;
+
+    border-radius: 50%;
+}
+
+.certification-left strong {
+    display: block;
+    color: #27442e;
+    font-size: 10px;
+
+    margin-bottom: 3px;
+}
+
+.certification-left small {
+    display: block;
+    color: #718072;
+    font-size: 8px;
+}
+
+.certification-strip > a {
+    color: #365f3d;
+    font-size: 9px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.certification-strip > a i {
+    margin-left: 5px;
+}
+
+
+/* =========================
+   FARMING PROCESS
+========================= */
+
+.process-section {
+    background: #eff9ef;
+    padding: 45px 0;
+}
+
+
+/* PROCESS TABS */
+
+.process-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+
+    margin-bottom: 12px;
+}
+
+.process-tab {
+    display: block;
+
+    padding: 12px 13px;
+
+    background: #e5f2e5;
+    border-radius: 8px;
+
+    color: #28462f;
+
+    transition: 0.3s;
+}
+
+.process-tab small {
+    display: block;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.process-tab strong {
+    display: block;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.process-tab.active,
+.process-tab:hover {
+    background: #064322;
+    color: #ffffff;
+}
+
+
+/* PROCESS CONTENT */
+
+.process-content {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 25px;
+
+    padding: 15px;
+
+    background: #ffffff;
+    border: 1px solid #e2ece1;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(28, 63, 36, 0.04);
+}
+
+.process-copy {
+    padding: 15px;
+}
+
+.process-label {
+    display: block;
+
+    color: #66866b;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 8px;
+}
+
+.process-copy h3 {
+    color: #213c29;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.6px;
+
+    margin-bottom: 9px;
+}
+
+.process-copy p {
+    color: #738175;
+    font-size: 9px;
+    line-height: 1.9;
+
+    margin-bottom: 12px;
+}
+
+.process-copy a {
+    color: #315d3b;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.process-copy a i {
+    margin-right: 5px;
+}
+
+.process-image {
+    height: 210px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.process-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   FINAL CTA SECTION
+========================= */
+
+.difference-section {
+    background: #eff9ef;
+    padding: 12px 0 55px;
+}
+
+.difference-box {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 30px 35px;
+
+    border-radius: 10px;
+    background: #003d1d;
+
+    box-shadow: 0 9px 20px rgba(20, 61, 31, 0.13);
+}
+
+.difference-content {
+    position: relative;
+    z-index: 2;
+}
+
+.difference-label {
+    display: block;
+
+    color: #c2e1c5;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 8px;
+}
+
+.difference-box h2 {
+    color: #ffffff;
+    font-size: clamp(22px, 3vw, 30px);
+    letter-spacing: -0.8px;
+
+    margin-bottom: 7px;
+}
+
+.difference-box p {
+    max-width: 520px;
+
+    color: #c1d8c5;
+    font-size: 9px;
+    line-height: 1.8;
+}
+
+.difference-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.difference-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    padding: 11px 15px;
+
+    border-radius: 6px;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.browse-button {
+    color: #163c24;
+    background: #f3fbf1;
+}
+
+.browse-button:hover {
+    background: #dceedd;
+}
+
+.contact-button {
+    color: #ffffff;
+    background: #185431;
+}
+
+.contact-button:hover {
+    background: #286c40;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #eaf6e9;
+    padding: 38px 0 17px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 0.8fr 1.25fr 1.15fr;
+
+    gap: 35px;
+    padding-bottom: 27px;
+}
+
+.footer-about .brand {
+    font-size: 17px;
+}
+
+.footer-about > p {
+    max-width: 250px;
+
+    color: #617365;
+    font-size: 10px;
+    line-height: 1.75;
+
+    margin: 13px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 8px;
+}
+
+.social-links a {
+    width: 29px;
+    height: 29px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    color: #365b3e;
+    background: #dcebdd;
+
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+    background: #16482c;
+}
+
+.footer-column h3 {
+    color: #253e2c;
+    font-size: 12px;
+
+    margin: 5px 0 13px;
+}
+
+.footer-column > a,
+.footer-column > p {
+    display: block;
+
+    color: #617365;
+    font-size: 10px;
+    line-height: 1.65;
+
+    margin-bottom: 7px;
+}
+
+.footer-column a:hover {
+    color: #276c3d;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contact-details i {
+    color: #456f4b;
+    margin-top: 3px;
+}
+
+.hours p {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.hours b {
+    color: #405b46;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding-top: 17px;
+
+    border-top: 1px solid #d8e8d8;
+
+    color: #647568;
+    font-size: 9px;
+}
+
+
+/* =========================
+   TABLET RESPONSIVENESS
+========================= */
+
+@media (max-width: 950px) {
+
+    .main-nav {
+        gap: 17px;
+        margin-right: 18px;
+    }
+
+    .about-hero-inner {
+        gap: 25px;
+    }
+
+    .about-image {
+        height: 310px;
+    }
+
+    .artisan-image {
+        height: 155px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 650px) {
+
+
+    /* HEADER */
+
+    .site-header {
+        height: 65px;
+    }
+
+    .header-inner {
+        width: 90%;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    .menu-button {
+        display: grid;
+        place-items: center;
+
+        order: 3;
+
+        width: 37px;
+        height: 37px;
+
+        color: #16482c;
+        background: #e5f2e4;
+
+        border-radius: 7px;
+
+        font-size: 17px;
+    }
+
+    .menu-button .fa-xmark {
+        display: none;
+    }
+
+    .header-actions {
+        margin-left: auto;
+        margin-right: 12px;
+    }
+
+    .top-button {
+        padding: 10px 12px;
+        font-size: 9px;
+    }
+
+    .account-button {
+        display: none;
+    }
+
+
+    /* MOBILE NAV */
+
+    .main-nav {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+        margin: 0;
+
+        padding: 8px 5% 13px;
+
+        background: #f5fcf4;
+
+        border-top: 1px solid #e0eee0;
+
+        box-shadow: 0 10px 18px rgba(20, 55, 28, 0.09);
+
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-8px);
+
+        pointer-events: none;
+
+        transition: 0.25s ease;
+    }
+
+    .main-nav a {
+        padding: 13px 3px;
+
+        border-bottom: 1px solid #e6efe5;
+
+        font-size: 13px;
+    }
+
+    #menu-toggle:checked ~ .main-nav {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    #menu-toggle:checked + .menu-button .fa-bars {
+        display: none;
+    }
+
+    #menu-toggle:checked + .menu-button .fa-xmark {
+        display: block;
+    }
+
+
+    /* GENERAL */
+
+    .page-width {
+        width: 90%;
+    }
+
+
+    /* ABOUT HERO */
+
+    .about-hero {
+        padding: 32px 0 40px;
+    }
+
+    .about-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .about-copy h1 {
+        font-size: 36px;
+    }
+
+    .about-copy h2 {
+        font-size: 23px;
+    }
+
+    .about-copy > p {
+        font-size: 10px;
+    }
+
+    .about-image {
+        height: 310px;
+    }
+
+    .community-card {
+        left: 10px;
+    }
+
+
+    /* STATISTICS */
+
+    .about-stats {
+        gap: 7px;
+    }
+
+    .about-stat {
+        padding: 10px 8px;
+    }
+
+    .about-stat strong {
+        font-size: 17px;
+    }
+
+    .about-stat span {
+        font-size: 7px;
+    }
+
+
+    /* MISSION */
+
+    .mission-section {
+        padding: 5px 0 20px;
+    }
+
+    .mission-box {
+        min-height: 0;
+        padding: 30px 23px;
+    }
+
+    .mission-box h2 {
+        font-size: 25px;
+    }
+
+    .mission-box p {
+        font-size: 9px;
+        line-height: 1.7;
+    }
+
+    .mission-decoration {
+        font-size: 95px;
+        right: -15px;
+    }
+
+
+    /* CRAFT */
+
+    .craft-section {
+        padding: 35px 0 40px;
+    }
+
+    .center-heading h2 {
+        font-size: 25px;
+    }
+
+    .center-heading p {
+        font-size: 9px;
+    }
+
+    .craft-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .craft-card {
+        padding: 19px;
+    }
+
+    .craft-card h3 {
+        font-size: 15px;
+    }
+
+
+    /* ARTISANS */
+
+    .artisans-section {
+        padding: 34px 0;
+    }
+
+    .artisans-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .artisans-heading h2 {
+        font-size: 25px;
+    }
+
+    .artisans-heading p {
+        font-size: 9px;
+    }
+
+    .artisan-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .artisan-image {
+        height: 220px;
+    }
+
+    .artisan-info {
+        padding: 14px;
+    }
+
+    .artisan-info h3 {
+        font-size: 15px;
+    }
+
+    .artisan-info p {
+        font-size: 9px;
+    }
+
+
+    /* CERTIFICATION */
+
+    .certification-strip {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px;
+    }
+
+    .certification-left small {
+        line-height: 1.6;
+    }
+
+
+    /* FARMING PROCESS */
+
+    .process-section {
+        padding: 38px 0;
+    }
+
+    .process-tabs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .process-tab {
+        padding: 12px 10px;
+    }
+
+    .process-tab strong {
+        font-size: 10px;
+    }
+
+    .process-content {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .process-copy {
+        padding: 10px 5px;
+    }
+
+    .process-copy h3 {
+        font-size: 20px;
+    }
+
+    .process-copy p {
+        font-size: 9px;
+    }
+
+    .process-image {
+        height: 220px;
+    }
+
+
+    /* FINAL CTA */
+
+    .difference-section {
+        padding: 5px 0 42px;
+    }
+
+    .difference-box {
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 28px 22px;
+    }
+
+    .difference-box h2 {
+        font-size: 25px;
+    }
+
+    .difference-box p {
+        font-size: 9px;
+    }
+
+    .difference-actions {
+        width: 100%;
+    }
+
+    .difference-actions a {
+        flex: 1;
+        padding: 11px 9px;
+        font-size: 8px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 18px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 7px;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 370px) {
+
+    .header-actions {
+        margin-right: 8px;
+    }
+
+    .top-button {
+        padding: 9px 8px;
+        font-size: 8px;
+    }
+
+    .about-copy h1 {
+        font-size: 32px;
+    }
+
+    .about-copy h2 {
+        font-size: 21px;
+    }
+
+    .about-image {
+        height: 260px;
+    }
+
+    .mission-box h2 {
+        font-size: 22px;
+    }
+
+    .artisan-image {
+        height: 190px;
+    }
+
+    .process-image {
+        height: 190px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+
+        <a class="brand" href="index.html">
+
+            <i class="fa-brands fa-envira"></i>
+
+            <span>Freshora</span>
+
+        </a>
+
+
+        <!-- HAMBURGER -->
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-button">
+
+            <i class="fa-solid fa-bars"></i>
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </label>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="product.html">Products</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <a href="products.html" class="top-button">
+
+                Explore Products
+
+            </a>
+
+            <a href="#contact" class="account-button">
+
+                <i class="fa-solid fa-user"></i>
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+     ABOUT HERO
+========================= -->
+
+<section class="about-hero">
+
+    <div class="page-width about-hero-inner">
+
+
+        <!-- LEFT CONTENT -->
+
+        <div class="about-copy">
+
+
+            <span class="section-label">
+
+                <i class="fa-solid fa-leaf"></i>
+
+                OUR ORIGINS &amp; PHILOSOPHY
+
+            </span>
+
+
+            <h1>About Freshora</h1>
+
+
+            <span class="story-label">
+
+                CHAPTER 01 · THE BEGINNING
+
+            </span>
+
+
+            <h2>
+
+                From a Saturday morning cart
+                to an artisanal sanctuary.
+
+            </h2>
+
+
+            <p>
+
+                Freshora did not emerge from a multinational
+                lab or corporate strategy. It began as a
+                simple passion for bringing better flavours
+                and wholesome goodness to the table.
+
+            </p>
+
+
+            <p>
+
+                Our early mornings were spent exploring
+                local markets, sourcing fresh ingredients
+                and discovering the natural beauty of
+                carefully prepared food.
+
+            </p>
+
+
+            <p>
+
+                Today, Freshora brings together our love
+                for botanical refreshments, artisanal
+                foods and responsible sourcing. We believe
+                that great taste should never come at the
+                expense of quality or nature.
+
+            </p>
+
+
+            <p>
+
+                Every bottle, bite and pantry creation
+                represents our commitment to thoughtful
+                ingredients, honest craftsmanship and
+                everyday nourishment.
+
+            </p>
+
+
+            <!-- STATISTICS -->
+
+            <div class="about-stats">
+
+
+                <div class="about-stat">
+
+                    <strong>100%</strong>
+
+                    <span>Pure Food Ingredients</span>
+
+                </div>
+
+
+                <div class="about-stat">
+
+                    <strong>38+</strong>
+
+                    <span>Partnered Farms</span>
+
+                </div>
+
+
+                <div class="about-stat">
+
+                    <strong>0g</strong>
+
+                    <span>Refined Additives</span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- RIGHT IMAGE -->
+
+        <div class="about-visual">
+
+
+            <div class="about-image">
+
+                <img
+                    src="/assets/about-1.jpg"
+                    alt="Freshora artisanal food and natural refreshments"
+                >
+
+            </div>
+
+
+            <div class="image-caption">
+
+                About Us
+
+            </div>
+
+
+            <!-- FLOATING CARD -->
+
+            <div class="community-card">
+
+                <div class="community-icon">
+
+                    <i class="fa-solid fa-people-group"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>Community Roots</strong>
+
+                    <small>
+
+                        Growing together through
+                        meaningful relationships.
+
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     OUR MISSION
+========================= -->
+
+<section class="mission-section">
+
+    <div class="page-width">
+
+
+        <div class="mission-box">
+
+
+            <div class="mission-content">
+
+
+                <span class="mission-label">
+
+                    <i class="fa-regular fa-circle-check"></i>
+
+                    OUR UNCOMPROMISING MISSION
+
+                </span>
+
+
+                <h2>
+
+                    “Our mission is to make real,
+                    wholesome food and refreshing
+                    botanicals effortlessly accessible
+                    without sacrificing pure taste
+                    or ethical sourcing.”
+
+                </h2>
+
+
+                <p>
+
+                    — The Freshora Founding Goal
+
+                </p>
+
+
+            </div>
+
+
+            <div class="mission-decoration">
+
+                <i class="fa-brands fa-pagelines"></i>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHAT SETS US APART
+========================= -->
+
+<section class="craft-section">
+
+    <div class="page-width">
+
+
+        <div class="center-heading">
+
+
+            <span class="section-label">
+
+                OUR CORE VALUES
+
+            </span>
+
+
+            <h2>
+
+                What Sets Our Craft Apart
+
+            </h2>
+
+
+            <p>
+
+                Every bottle is crafted with intention,
+                every ingredient is selected with care,
+                and every creation reflects the values
+                that make our ingredients premium.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="craft-grid">
+
+
+            <!-- QUALITY -->
+
+            <article class="craft-card">
+
+
+                <div class="craft-icon">
+
+                    <i class="fa-solid fa-award"></i>
+
+                </div>
+
+
+                <span class="craft-number">
+
+                    PILLAR I
+
+                </span>
+
+
+                <h3>
+
+                    Quality
+
+                </h3>
+
+
+                <p>
+
+                    Only carefully selected ingredients
+                    are used in our food and beverages.
+                    We believe in natural goodness,
+                    excellent preparation and products
+                    that bring satisfaction with every bite.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Carefully Selected Ingredients
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Strict Quality Standards
+
+                    </li>
+
+
+                </ul>
+
+
+            </article>
+
+
+
+            <!-- FRESHNESS -->
+
+            <article class="craft-card">
+
+
+                <div class="craft-icon">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                </div>
+
+
+                <span class="craft-number">
+
+                    PILLAR II
+
+                </span>
+
+
+                <h3>
+
+                    Freshness
+
+                </h3>
+
+
+                <p>
+
+                    Prepared in small batches with
+                    attention to every detail. We maintain
+                    freshness through careful preparation,
+                    proper storage and thoughtful delivery.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Freshly Prepared Products
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Carefully Chosen Ingredients
+
+                    </li>
+
+
+                </ul>
+
+
+            </article>
+
+
+
+            <!-- CUSTOMER SATISFACTION -->
+
+            <article class="craft-card">
+
+
+                <div class="craft-icon">
+
+                    <i class="fa-solid fa-face-smile"></i>
+
+                </div>
+
+
+                <span class="craft-number">
+
+                    PILLAR III
+
+                </span>
+
+
+                <h3>
+
+                    Customer Satisfaction
+
+                </h3>
+
+
+                <p>
+
+                    Transparency, care and honest
+                    craftsmanship guide everything we
+                    create. We are committed to making
+                    every experience worthwhile.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Thoughtful Customer Service
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        Open Communication
+
+                    </li>
+
+
+                </ul>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     MEET OUR ARTISANS
+========================= -->
+
+<section class="artisans-section">
+
+    <div class="page-width">
+
+
+        <div class="artisans-heading">
+
+
+            <div>
+
+
+                <span class="section-label">
+
+                    THE LIVING ECOSYSTEM
+
+                </span>
+
+
+                <h2>
+
+                    Meet Our Artisans &amp;
+                    Soil Stewards
+
+                </h2>
+
+
+            </div>
+
+
+            <p>
+
+                Behind every carefully prepared product
+                is a network of dedicated farmers,
+                artisans and passionate food creators
+                working together to deliver exceptional
+                quality.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="artisan-grid">
+
+
+            <!-- ARTISAN ONE -->
+
+            <article class="artisan-card">
+
+
+                <div class="artisan-image">
+
+                    <img
+                        src="/assets/about-2.jpg"
+                        alt="Freshora artisan preparing natural ingredients"
+                    >
+
+                </div>
+
+
+                <div class="artisan-info">
+
+
+                    <span class="artisan-role">
+
+                        Botanical Artisan
+
+                    </span>
+
+
+                    <h3>
+
+                        Evelyn Chen
+
+                    </h3>
+
+
+                    <p>
+
+                        Bringing creativity and care to
+                        botanical refreshments through
+                        thoughtfully selected ingredients
+                        and handcrafted recipes.
+
+                    </p>
+
+
+                    <a href="#contact" class="artisan-link">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                        Botanical Beverage Expert
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ARTISAN TWO -->
+
+            <article class="artisan-card">
+
+
+                <div class="artisan-image">
+
+                    <img
+                        src="/assets/about-3.jpg"
+                        alt="Farmer harvesting fresh vegetables"
+                    >
+
+                </div>
+
+
+                <div class="artisan-info">
+
+
+                    <span class="artisan-role">
+
+                        Regenerative Grower
+
+                    </span>
+
+
+                    <h3>
+
+                        Marcus Holloway
+
+                    </h3>
+
+
+                    <p>
+
+                        Dedicated to sustainable agriculture,
+                        responsible farming practices and
+                        supplying fresh ingredients from
+                        healthy soil.
+
+                    </p>
+
+
+                    <a href="#contact" class="artisan-link">
+
+                        <i class="fa-solid fa-seedling"></i>
+
+                        Farm Stewardship
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ARTISAN THREE -->
+
+            <article class="artisan-card">
+
+
+                <div class="artisan-image">
+
+                    <img
+                        src="/assets/about-4.jpg"
+                        alt="Artisan preparing fresh pantry products"
+                    >
+
+                </div>
+
+
+                <div class="artisan-info">
+
+
+                    <span class="artisan-role">
+
+                        Culinary Lead
+
+                    </span>
+
+
+                    <h3>
+
+                        Aria Lindqvist
+
+                    </h3>
+
+
+                    <p>
+
+                        Exploring natural flavours and
+                        traditional food preparation to
+                        create wholesome pantry essentials
+                        with exceptional taste.
+
+                    </p>
+
+
+                    <a href="#contact" class="artisan-link">
+
+                        <i class="fa-solid fa-utensils"></i>
+
+                        Culinary Development
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- CERTIFICATION STRIP -->
+
+        <div class="certification-strip">
+
+
+            <div class="certification-left">
+
+
+                <div class="certification-icon">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+
+                        Certified B-Corp Pending ·
+                        Carbon Neutral Courier
+
+                    </strong>
+
+
+                    <small>
+
+                        Building a more responsible food
+                        ecosystem through conscious sourcing.
+
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+            <a href="#process">
+
+                Responsible Food Guide
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     OUR FARMING PROCESS
+========================= -->
+
+<section class="process-section" id="process">
+
+    <div class="page-width">
+
+
+        <div class="center-heading">
+
+
+            <span class="section-label">
+
+                THE FRESHORA METHOD
+
+            </span>
+
+
+            <h2>
+
+                From Soil to Your Sip
+
+            </h2>
+
+
+            <p>
+
+                Our story begins with healthy soil and
+                ends with nourishing creations prepared
+                with care.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- PROCESS TABS -->
+
+        <div class="process-tabs">
+
+
+            <a href="#soil" class="process-tab active">
+
+                <small>01</small>
+
+                <strong>
+
+                    Regenerative Soil
+
+                </strong>
+
+            </a>
+
+
+            <a href="#harvesting" class="process-tab">
+
+                <small>02</small>
+
+                <strong>
+
+                    Dawn Harvesting
+
+                </strong>
+
+            </a>
+
+
+            <a href="#craft" class="process-tab">
+
+                <small>03</small>
+
+                <strong>
+
+                    Cold Hydro-Craft
+
+                </strong>
+
+            </a>
+
+
+            <a href="#packaging" class="process-tab">
+
+                <small>04</small>
+
+                <strong>
+
+                    Eco Packaging
+
+                </strong>
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- PROCESS CONTENT -->
+
+        <div class="process-content" id="soil">
+
+
+            <div class="process-copy">
+
+
+                <span class="process-label">
+
+                    PILLAR 01 · FOUNDATION
+
+                </span>
+
+
+                <h3>
+
+                    Living soil without chemical intervention.
+
+                </h3>
+
+
+                <p>
+
+                    We carefully focus on maintaining
+                    healthy soil through responsible
+                    farming practices. From composting
+                    to natural cultivation, our approach
+                    supports a better growing environment
+                    and encourages healthier ingredients
+                    for our everyday products.
+
+                </p>
+
+
+                <a href="#contact">
+
+                    <i class="fa-solid fa-seedling"></i>
+
+                    Discover Our Farming Philosophy
+
+                </a>
+
+
+            </div>
+
+
+
+            <div class="process-image">
+
+                <img
+                    src="/assets/about-5.jpg"
+                    alt="Hands holding healthy soil and young plant"
+                >
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FINAL CTA
+========================= -->
+
+<section class="difference-section" id="contact">
+
+    <div class="page-width">
+
+
+        <div class="difference-box">
+
+
+            <div class="difference-content">
+
+
+                <span class="difference-label">
+
+                    TAKE PART IN THE MOVEMENT
+
+                </span>
+
+
+                <h2>
+
+                    Experience the Freshora Difference
+
+                </h2>
+
+
+                <p>
+
+                    Taste the crisp difference with
+                    ingredient-led nutrition, gentle
+                    small-batch handling and genuine
+                    care in every creation. Join us
+                    on our journey.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="difference-actions">
+
+
+                <a href="products.html" class="browse-button">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    Browse Our Collection
+
+                </a>
+
+
+                <a href="mailto:hello@freshora.com" class="contact-button">
+
+                    Get in Touch
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="page-width">
+
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-about">
+
+
+                <a class="brand" href="index.html">
+
+                    <i class="fa-brands fa-envira"></i>
+
+                    <span>Freshora</span>
+
+                </a>
+
+
+                <p>
+
+                    Fresh Flavours, Better Living.
+                    Deliciously crafted refreshments
+                    and wholesome pantry delights made
+                    with care.
+
+                </p>
+
+
+                <div class="social-links">
+
+
+                    <a href="#contact" aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#contact" aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a href="#contact" aria-label="Share">
+
+                        <i class="fa-solid fa-share-nodes"></i>
+
+                    </a>
+
+
+                    <a href="mailto:hello@freshora.com" aria-label="Email">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+
+                <h3>Quick Links</h3>
+
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="about.html">About Us</a>
+
+                <a href="contact.html">Contact Us</a>
+
+
+            </div>
+
+
+
+            <!-- CONTACT INFO -->
+
+            <div class="footer-column contact-details">
+
+
+                <h3>Contact Info</h3>
+
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +1 (800) 555-3737
+
+                </p>
+
+
+                <p>
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    care@freshora.com
+
+                </p>
+
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    742 Botanical Orchard Way,
+                    Suite 100, Portland, OR
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- OPENING HOURS -->
+
+            <div class="footer-column hours">
+
+
+                <h3>Opening Hours</h3>
+
+
+                <p>
+
+                    <span>Mon–Fri</span>
+
+                    <b>7:00 AM – 7:00 PM</b>
+
+                </p>
+
+
+                <p>
+
+                    <span>Saturday</span>
+
+                    <b>8:00 AM – 6:00 PM</b>
+
+                </p>
+
+
+                <p>
+
+                    <span>Sunday</span>
+
+                    <b>9:00 AM – 4:00 PM</b>
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+
+            <span>
+
+                © 2025 Freshora Artisanal Food &amp;
+                Beverages. All rights reserved.
+
+            </span>
+
+
+            <span>
+
+                Crafted with organic care and
+                transparent vitality.
+
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

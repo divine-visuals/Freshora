@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Freshora</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f0faf0;
+    color: #152c1d;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+.container {
+    width: 92%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+header {
+    background: #f5fcf4;
+    border-bottom: 1px solid #e2eee1;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #153d26;
+}
+
+.logo i {
+    font-size: 19px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: #24392c;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #267b43;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.explore-btn {
+    background: #164c2c;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+.user-icon {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: #164c2c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* HAMBURGER */
+
+.menu-check {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 23px;
+    cursor: pointer;
+    color: #164c2c;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 330px;
+    background:
+    radial-gradient(circle at 10% 30%, #d4efd7 0, transparent 40%),
+    radial-gradient(circle at 90% 70%, #d5f7d1 0, transparent 40%),
+    #edf8ec;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    padding: 60px 0;
+}
+
+.hero-label {
+    display: inline-block;
+    background: #ffffffb5;
+    padding: 6px 13px;
+    border-radius: 30px;
+    font-size: 10px;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 5vw, 58px);
+    letter-spacing: -2px;
+    color: #153b25;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #536658;
+}
+
+.response-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffffa8;
+    padding: 9px 14px;
+    border-radius: 30px;
+    margin-top: 17px;
+    font-size: 11px;
+}
+
+.response-time i {
+    color: #176535;
+}
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+    padding: 65px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.25fr;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* LEFT COLUMN */
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.info-card {
+    background: white;
+    border: 1px solid #e7efe6;
+    padding: 25px;
+    border-radius: 17px;
+}
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.card-heading .icon {
+    width: 39px;
+    height: 39px;
+    background: #eaf5e9;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #245a36;
+}
+
+.card-heading h3 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.card-heading p {
+    font-size: 11px;
+    color: #829087;
+    margin-top: 4px;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-detail {
+    background: #eef7ed;
+    border-radius: 11px;
+    padding: 15px;
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.contact-detail i {
+    font-size: 15px;
+    color: #174e2d;
+    margin-top: 3px;
+}
+
+.contact-detail h4 {
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.contact-detail p,
+.contact-detail a {
+    font-size: 12px;
+    color: #46584a;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+
+/* OPENING HOURS */
+
+.hours-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.hours-title h3 {
+    font-size: 17px;
+}
+
+.open-badge {
+    background: #e1f4e1;
+    color: #27643a;
+    font-size: 10px;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+.hour-row {
+    background: #eef7ed;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-size: 11px;
+}
+
+.hour-row strong {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.promise {
+    margin-top: 17px;
+    background: #e5f3e5;
+    padding: 13px;
+    border-radius: 9px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.promise i {
+    color: #245c37;
+}
+
+
+/* MAP CARD */
+
+.map-card {
+    padding: 12px;
+}
+
+.map-image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.map-location {
+    padding: 13px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 11px;
+}
+
+.map-location a {
+    color: #1a6536;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* RIGHT COLUMN / CONTACT FORM */
+
+.form-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #e7efe6;
+}
+
+.form-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+.form-top small {
+    font-size: 10px;
+    color: #526459;
+    letter-spacing: 1px;
+}
+
+.form-top h2 {
+    font-size: 25px;
+    margin-top: 6px;
+}
+
+.live-badge {
+    background: #eaf6e9;
+    color: #28633c;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.required {
+    color: #d44848;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+    background: #eff8ee;
+    padding: 14px;
+    border-radius: 9px;
+    font-size: 12px;
+    color: #253c2d;
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #38784b;
+    background: white;
+}
+
+.input-group textarea {
+    height: 150px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #91a093;
+}
+
+.consent {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    font-size: 11px;
+    color: #637367;
+    line-height: 1.6;
+    margin: 15px 0 25px;
+}
+
+.consent input {
+    margin-top: 3px;
+    accent-color: #245c37;
+}
+
+.form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.send-btn {
+    background: #174d2c;
+    color: white;
+    border: none;
+    padding: 15px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background: #267340;
+}
+
+.security {
+    font-size: 10px;
+    color: #77857a;
+}
+
+
+/* FEATURES SECTION */
+
+.features-section {
+    background: #e9f6e9;
+    padding: 45px 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.feature-card {
+    background: white;
+    padding: 23px;
+    border-radius: 16px;
+    border: 1px solid #e5eee4;
+}
+
+.feature-card i {
+    font-size: 20px;
+    color: #245b36;
+    margin-bottom: 18px;
+}
+
+.feature-card small {
+    display: block;
+    font-size: 10px;
+    color: #859187;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #657368;
+}
+
+
+/* FAQ SECTION */
+
+.faq-section {
+    padding: 90px 0;
+}
+
+.faq-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.faq-heading small {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.faq-heading h2 {
+    font-size: clamp(25px, 4vw, 36px);
+    margin: 12px 0;
+    letter-spacing: -1px;
+}
+
+.faq-heading p {
+    font-size: 13px;
+    color: #657368;
+    line-height: 1.7;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-item {
+    background: white;
+    border: 1px solid #e7eee5;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 19px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary i {
+    color: #66776a;
+    transition: 0.3s;
+}
+
+.faq-item[open] summary i {
+    transform: rotate(45deg);
+}
+
+.faq-item summary span {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.faq-item summary span i {
+    background: #eaf5e9;
+    color: #225c36;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.faq-answer {
+    padding: 0 22px 20px 58px;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #68776b;
+}
+
+
+/* URGENT BANNER */
+
+.urgent-banner {
+    max-width: 850px;
+    margin: 35px auto 0;
+    background: #e2f1e2;
+    border-radius: 15px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.urgent-banner h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.urgent-banner p {
+    font-size: 11px;
+    color: #637467;
+}
+
+.call-btn {
+    background: #f4fbf3;
+    padding: 12px 18px;
+    border-radius: 8px;
+    color: #245b36;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #e8f5e8;
+    padding: 55px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1.3fr 1.1fr;
+    gap: 35px;
+}
+
+.footer-column h3 {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.footer-column p,
+.footer-column a {
+    display: block;
+    font-size: 11px;
+    color: #647368;
+    line-height: 2;
+}
+
+.footer-column a:hover {
+    color: #205a35;
+}
+
+.footer-brand {
+    font-size: 19px;
+    font-weight: 700;
+    color: #16492b;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    width: 30px;
+    height: 30px;
+    background: #d9ead9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #245b36;
+}
+
+.footer-bottom {
+    border-top: 1px solid #d8e7d8;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 10px;
+    color: #68776a;
+}
+
+
+/* RESPONSIVENESS */
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .left-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map-card {
+        grid-column: 1 / -1;
+    }
+
+    .form-card {
+        padding: 28px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 91%;
+    }
+
+    .navbar {
+        height: 68px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 3;
+    }
+
+    .nav-right {
+        margin-left: auto;
+        margin-right: 18px;
+    }
+
+    .explore-btn {
+        padding: 9px 12px;
+        font-size: 10px;
+    }
+
+    .user-icon {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background: #f5fcf4;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 0 5%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+        border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid #e3eee2;
+    }
+
+    .menu-check:checked ~ .nav-links {
+        max-height: 300px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom-color: #e3eee2;
+    }
+
+    .hero {
+        min-height: 290px;
+    }
+
+    .hero-content {
+        padding: 45px 0;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .contact-section {
+        padding: 35px 0;
+    }
+
+    .left-column {
+        display: flex;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .form-card {
+        padding: 22px 17px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .form-top h2 {
+        font-size: 22px;
+    }
+
+    .input-group textarea {
+        height: 130px;
+    }
+
+    .form-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .send-btn {
+        width: 100%;
+    }
+
+    .features-section {
+        padding: 30px 0;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 22px;
+    }
+
+    .faq-section {
+        padding: 60px 0;
+    }
+
+    .faq-heading h2 {
+        font-size: 27px;
+    }
+
+    .faq-heading p {
+        font-size: 12px;
+    }
+
+    .faq-item summary {
+        padding: 16px;
+        font-size: 12px;
+    }
+
+    .faq-answer {
+        padding: 0 16px 17px;
+    }
+
+    .urgent-banner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .call-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 18px;
+    }
+
+    .footer-column h3 {
+        font-size: 14px;
+    }
+
+    .footer-column p,
+    .footer-column a {
+        font-size: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        line-height: 1.8;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .nav-right {
+        margin-right: 10px;
+    }
+
+    .explore-btn {
+        padding: 8px;
+    }
+
+    .hour-row {
+        font-size: 10px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-brands fa-envira"></i>
+            Freshora
+        </a>
+
+        <input type="checkbox" id="menu-check" class="menu-check">
+
+        <nav class="nav-links" id="nav">
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="products.html" class="explore-btn">
+                Explore Products
+            </a>
+
+            <a href="#" class="user-icon">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+
+        <label for="menu-check" class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+    </div>
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <span class="hero-label">
+            <i class="fa-solid fa-users"></i>
+            WE ARE AT YOUR SERVICE
+        </span>
+
+        <h1>Get in Touch</h1>
+
+        <p>
+            Have a question about our provisions, catering enquiries,
+            or retail locations? We'd love to hear from you.
+        </p>
+
+        <div class="response-time">
+            <i class="fa-solid fa-circle"></i>
+            Average response time: &lt; 4 hours during working hours
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-section">
+
+    <div class="container contact-grid">
+
+
+        <!-- LEFT COLUMN -->
+
+        <div class="left-column">
+
+
+            <!-- DIRECT CHANNELS -->
+
+            <div class="info-card">
+
+                <div class="card-heading">
+
+                    <div class="icon">
+                        <i class="fa-regular fa-compass"></i>
+                    </div>
+
+                    <div>
+                        <h3>Direct Channels</h3>
+                        <p>Phone & digital dispatch</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+                        <h4>CONCIERGE LINE</h4>
+                        <a href="tel:+15552345678">
+                            +1 (555) 234-5678
+                        </a>
+                        <p>Dial-free service available</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <div>
+                        <h4>GENERAL INQUIRIES</h4>
+                        <a href="mailto:hello@freshora-provisions.demo">
+                            hello@freshora-provisions.demo
+                        </a>
+                        <p>Monitored continuously</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <i class="fa-solid fa-store"></i>
+
+                    <div>
+                        <h4>ORCHARD FLAGSHIP STORE</h4>
+                        <p>
+                            142 Green Garden Lane,
+                            Orchard District, CA 94103
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OPENING HOURS -->
+
+            <div class="info-card">
+
+                <div class="hours-title">
+
+                    <h3>
+                        <i class="fa-regular fa-clock"></i>
+                        Opening Hours
+                    </h3>
+
+                    <span class="open-badge">
+                        Open Today
+                    </span>
+
+                </div>
+
+
+                <div class="hour-row">
+                    <span>Monday - Friday</span>
+                    <strong>8:00 AM - 6:00 PM PST</strong>
+                </div>
+
+                <div class="hour-row">
+                    <span>Saturday - Sunday</span>
+                    <strong>9:00 AM - 4:00 PM PST</strong>
+                </div>
+
+
+                <div class="promise">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <p>
+                        Customer Care Promise:
+                        All messages answered within 24 hours guaranteed.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOCATION MAP -->
+
+            <div class="info-card map-card">
+
+                <!-- Replace this with your actual map image -->
+                <img
+                    src="assets/contact-map.jpeg"
+                    alt="Freshora store location map"
+                    class="map-image"
+                >
+
+                <div class="map-location">
+
+                    <span>
+                        <i class="fa-solid fa-train"></i>
+                        Transit: Orchard Line 12 & Caltrain Depot
+                    </span>
+
+                    <a href="https://maps.google.com/?q=San+Francisco"
+                       target="_blank">
+                        Open in Maps
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- RIGHT COLUMN / FORM -->
+
+        <div class="form-card">
+
+            <div class="form-top">
+
+                <div>
+                    <small>SEND AN INQUIRY</small>
+                    <h2>Write to our team</h2>
+                </div>
+
+                <span class="live-badge">
+                    <i class="fa-solid fa-bolt"></i>
+                    Live Dispatch Active
+                </span>
+
+            </div>
+
+
+            <form action="#" method="post">
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+
+                        <label>
+                            Full Name <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            name="fullname"
+                            placeholder="Your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Email Address <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="elena@example.com"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Nature of Inquiry
+                        <span class="required">*</span>
+                    </label>
+
+                    <select name="inquiry" required>
+
+                        <option value="">
+                            Select an inquiry topic...
+                        </option>
+
+                        <option>Product Information</option>
+
+                        <option>Catering Services</option>
+
+                        <option>Wholesale Partnership</option>
+
+                        <option>Delivery Enquiries</option>
+
+                        <option>Customer Support</option>
+
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Your Message
+                        <span class="required">*</span>
+                    </label>
+
+                    <textarea
+                        name="message"
+                        placeholder="Tell us about your event, delivery date requirement, dietary question, or partnership idea..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <label class="consent">
+
+                    <input type="checkbox" required>
+
+                    <span>
+                        I consent to Freshora processing my contact details
+                        in accordance with our Privacy Policy.
+                    </span>
+
+                </label>
+
+
+                <div class="form-bottom">
+
+                    <button type="submit" class="send-btn">
+
+                        <i class="fa-regular fa-paper-plane"></i>
+                        Send Message
+
+                    </button>
+
+                    <span class="security">
+                        <i class="fa-solid fa-lock"></i>
+                        256-bit encrypted SSL dispatch
+                    </span>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES SECTION -->
+
+<section class="features-section">
+
+    <div class="container features-grid">
+
+
+        <div class="feature-card">
+
+            <i class="fa-brands fa-envira"></i>
+
+            <small>01 / BOTANICAL SOURCING</small>
+
+            <h3>California Farms First</h3>
+
+            <p>
+                Our juices, baked goods, and savory bowls stem from
+                certified regenerative growers within 120 miles
+                of the Bay Area.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-recycle"></i>
+
+            <small>02 / ZERO-WASTE LOOP</small>
+
+            <h3>Return & Replenish</h3>
+
+            <p>
+                All amber glass bottles and pantry jars can be returned
+                to our Orchard flagship for store credits and sanitized
+                reuse.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <i class="fa-regular fa-clock"></i>
+
+            <small>03 / SAME-DAY FRESHNESS</small>
+
+            <h3>Pressed Each Dawn</h3>
+
+            <p>
+                Cold-pressed elixirs and artisan bakes never sit overnight.
+                We harvest ingredients daily to local family shelters.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- FAQ SECTION -->
+
+<section class="faq-section">
+
+    <div class="container">
+
+        <div class="faq-heading">
+
+            <small>QUICK ANSWERS</small>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <p>
+                Need instant clarification? Here are the most common
+                questions regarding pickup, ingredients, and eco-packaging.
+            </p>
+
+        </div>
+
+
+        <div class="faq-container">
+
+
+            <details class="faq-item">
+
+                <summary>
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        How does local store pickup work for daily provisions?
+                    </span>
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </summary>
+
+                <div class="faq-answer">
+
+                    Simply place your order online and select the local
+                    store pickup option. You will receive a notification
+                    when your order is ready for collection.
+
+                </div>
+
+            </details>
+
+
+            <details class="faq-item">
+
+                <summary>
+
+                    <span>
+                        <i class="fa-solid fa-bottle-water"></i>
+                        Where can I find complete allergen and nutritional profiles?
+                    </span>
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </summary>
+
+                <div class="faq-answer">
+
+                    You can find ingredient and nutritional information
+                    on individual product pages. You can also contact
+                    our customer care team for additional details.
+
+                </div>
+
+            </details>
+
+
+            <details class="faq-item">
+
+                <summary>
+
+                    <span>
+                        <i class="fa-solid fa-recycle"></i>
+                        Is Freshora packaging 100% compostable or recyclable?
+                    </span>
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </summary>
+
+                <div class="faq-answer">
+
+                    We aim to use environmentally responsible packaging.
+                    Please check individual product packaging for
+                    recycling and composting instructions.
+
+                </div>
+
+            </details>
+
+
+        </div>
+
+
+        <!-- URGENT BANNER -->
+
+        <div class="urgent-banner">
+
+            <div>
+
+                <h3>Have an urgent catering or bulk order?</h3>
+
+                <p>
+                    Connect immediately with our head chef for wholesale pricing.
+                </p>
+
+            </div>
+
+            <a href="tel:+15552345678" class="call-btn">
+
+                <i class="fa-solid fa-phone"></i>
+                Call +1 (555) 234-5678
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-column">
+
+                <div class="footer-brand">
+                    <i class="fa-brands fa-envira"></i>
+                    Freshora
+                </div>
+
+                <p>
+                    Fresh Flavours, Better Living.
+                    Deliciously crafted organic refreshments
+                    and wholesome pantry delights.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="about.html">About Us</a>
+
+                <a href="contact.html">Contact Us</a>
+
+            </div>
+
+
+            <!-- CONTACT INFO -->
+
+            <div class="footer-column">
+
+                <h3>Contact Info</h3>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +1 (800) 555-3737
+                </p>
+
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    care@freshora.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    742 Botanical Orchard Way,
+                    Suite 100, Portland, OR
+                </p>
+
+            </div>
+
+
+            <!-- OPENING HOURS -->
+
+            <div class="footer-column">
+
+                <h3>Opening Hours</h3>
+
+                <p>Mon - Fri: 7:00 AM - 7:00 PM</p>
+
+                <p>Saturday: 8:00 AM - 6:00 PM</p>
+
+                <p>Sunday: 9:00 AM - 4:00 PM</p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2025 Freshora Artisanal Food & Beverages.
+                All rights reserved.
+            </p>
+
+            <p>
+                Crafted with organic care and transparent vitality.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
