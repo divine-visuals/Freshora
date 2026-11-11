@@ -44,8 +44,9 @@ img {
     height: 76px;
     background: #f5fcf4;
     border-bottom: 1px solid #e0eee0;
-    position: relative;
+    position: fixed;
     z-index: 20;
+    width: 100%;
 }
 
 .header-inner {
@@ -128,7 +129,7 @@ img {
 
 .hero {
     background: #eff9ef;
-    padding: 48px 0 55px;
+    padding: 100px 0 55px;
 }
 
 .hero-inner {
