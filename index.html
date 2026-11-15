@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -37,18 +37,22 @@
             </label>
 
             <nav class="main-nav">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="product.html">Products</a>
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact Us</a>
             </nav>
 
+
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+            <i class="fa-solid fa-moon"></i></button>
+
             <div class="header-actions">
-                <a class="top-button" href="#products">
+                <a class="top-button" href="product.html">
                     Explore Products
                 </a>
 
-                <a class="account-button" href="#contact" aria-label="Contact Freshora">
+                <a class="account-button" href="contact.html" aria-label="Contact Freshora">
                     <i class="fa-solid fa-user"></i>
                 </a>
             </div>
@@ -91,7 +95,7 @@
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
 
-                        <a class="button button-light" href="#contact">
+                        <a class="button button-light" href="contact.html">
                             Contact Us
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
@@ -242,7 +246,7 @@
                                     <strong>$4.95</strong>
                                 </span>
 
-                                <a href="#contact">
+                                <a href="product.html">
                                     Order / View
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
@@ -292,7 +296,7 @@
                                     <strong>$6.50</strong>
                                 </span>
 
-                                <a href="#contact">
+                                <a href="product.html">
                                     Order / View
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
@@ -341,7 +345,7 @@
                                     <strong>$4.25</strong>
                                 </span>
 
-                                <a href="#contact">
+                                <a href="product.html">
                                     Order / View
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
@@ -391,7 +395,7 @@
                                     <strong>$8.50</strong>
                                 </span>
 
-                                <a href="#contact">
+                                <a href="product.html">
                                     Order / View
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
@@ -407,7 +411,7 @@
 
                 <div class="all-products">
 
-                    <a href="#contact">
+                    <a href="product.html">
                         View All Products
                         <i class="fa-regular fa-rectangle-list"></i>
                     </a>
@@ -464,7 +468,7 @@
                             prolonged shelf storage.
                         </p>
 
-                        <a href="#products">
+                        <a href="about.html">
                             Learn about our growers
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -491,7 +495,7 @@
                             additives. Every batch is crafted transparent.
                         </p>
 
-                        <a href="#products">
+                        <a href="about.html">
                             Explore production standards
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -518,7 +522,7 @@
                             dining pleasure without guilt.
                         </p>
 
-                        <a href="#products">
+                        <a href="about.html">
                             Discover flavour notes
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -532,22 +536,22 @@
                 <div class="stats-bar">
 
                     <div>
-                        <strong>100%</strong>
+                        <strong class="counter" data-target="100" data-suffix="%">0%</strong>
                         <span>ORGANIC VERIFIED</span>
                     </div>
 
                     <div>
-                        <strong>48 Hrs</strong>
+                        <strong class="counter" data-target="100" data-suffix="%">0 Hrs</strong>
                         <span>FARM TO BATCH</span>
                     </div>
 
                     <div>
-                        <strong>0%</strong>
+                        <strong class="counter" data-target="0" data-suffix="%">0%</strong>
                         <span>REFINED SUGAR</span>
                     </div>
 
                     <div>
-                        <strong>99.4%</strong>
+                        <strong class="counter" data-target="99.4" data-suffix="%">0%</strong>
                         <span>CUSTOMER SATISFACTION</span>
                     </div>
 
@@ -616,7 +620,7 @@
             <!-- FOOTER BRAND -->
             <div class="footer-about">
 
-                <a class="brand" href="#home">
+                <a class="brand" href="contact.html">
                     <i class="fa-brands fa-envira"></i>
                     <span>Freshora</span>
                 </a>
@@ -726,6 +730,227 @@
         </div>
 
     </footer>
+
+    
+<script>
+
+/* =============JAVASCRIPT===*/
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+
+/* ========ANIMATED STATISTICS COUNTERS========== */
+
+    const counters = document.querySelectorAll(".counter");
+
+    const counterObserver = new IntersectionObserver(function(entries) {
+
+        entries.forEach(function(entry) {
+
+            if (entry.isIntersecting) {
+
+                const counter = entry.target;
+
+                const target = parseFloat(counter.dataset.target);
+
+                const suffix = counter.dataset.suffix || "";
+
+                const duration = 2000;
+
+                const startTime = performance.now();
+
+                function updateCounter(currentTime) {
+
+                    const elapsed = currentTime - startTime;
+
+                    const progress = Math.min(elapsed / duration, 1);
+
+                    const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+                    const currentValue = target * easedProgress;
+
+                    const formattedValue = Number.isInteger(target)
+                        ? Math.floor(currentValue)
+                        : currentValue.toFixed(1);
+
+                    counter.textContent = formattedValue + suffix;
+
+                    if (progress < 1) {
+
+                        requestAnimationFrame(updateCounter);
+
+                    } else {
+
+                        counter.textContent = target + suffix;
+
+                    }
+
+                }
+
+                requestAnimationFrame(updateCounter);
+
+                counterObserver.unobserve(counter);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.7
+    });
+
+
+    counters.forEach(function(counter) {
+
+        counterObserver.observe(counter);
+
+    });
+
+
+    /* SCROLL REVEAL ANIMATION */
+
+    const revealElements = document.querySelectorAll(
+        ".featured-heading, .product-card, .center-heading, .benefit-card, .stats-bar, .callout"
+    );
+
+    revealElements.forEach(function(element) {
+        element.classList.add("reveal");
+    });
+
+
+    const observer = new IntersectionObserver(function(entries) {
+
+        entries.forEach(function(entry) {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("active");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.12
+    });
+
+
+    revealElements.forEach(function(element) {
+        observer.observe(element);
+    });
+
+
+
+    /* NAVBAR SCROLL SHADOW */
+
+    const header = document.querySelector(".site-header");
+
+    function updateHeader() {
+
+        if (window.scrollY > 30) {
+
+            header.classList.add("scrolled");
+
+        } else {
+
+            header.classList.remove("scrolled");
+
+        }
+
+    }
+
+    window.addEventListener("scroll", updateHeader, {
+        passive: true
+    });
+
+    updateHeader();
+
+
+
+    /* BACK TO TOP BUTTON */
+
+    const backToTop = document.createElement("button");
+
+    backToTop.className = "back-to-top";
+
+    backToTop.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+
+    backToTop.setAttribute("aria-label", "Back to top");
+
+    document.body.appendChild(backToTop);
+
+
+    window.addEventListener("scroll", function() {
+
+        if (window.scrollY > 500) {
+
+            backToTop.classList.add("show");
+
+        } else {
+
+            backToTop.classList.remove("show");
+
+        }
+
+    }, {
+        passive: true
+    });
+
+
+    backToTop.addEventListener("click", function() {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+      });
+
+
+      });
+
+
+
+    // Get the theme button
+    const themeButton = document.querySelector(".theme-toggle");
+
+    // Get the icon inside the button
+    const themeIcon = themeButton.querySelector("i");
+
+    // Check the saved theme
+    let savedTheme = localStorage.getItem("freshora-theme");
+
+    // Apply the saved theme
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        themeIcon.classList.replace("fa-moon", "fa-sun");
+    }
+
+    // Switch between light and dark mode
+    themeButton.addEventListener("click", function () {
+
+        document.body.classList.toggle("dark-mode");
+
+        // Check which theme is active
+        if (document.body.classList.contains("dark-mode")) {
+
+            localStorage.setItem("freshora-theme", "dark");
+
+            themeIcon.classList.replace("fa-moon", "fa-sun");
+
+        } else {
+
+            localStorage.setItem("freshora-theme", "light");
+
+            themeIcon.classList.replace("fa-sun", "fa-moon");
+        }
+
+    });
+
+</script>
+
 
 </body>
 </html>
