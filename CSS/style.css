@@ -1779,7 +1779,21 @@ color: #ffffff;
 
 }
 
-/* ================================================================================================================================= */
+
 .header-inner a span {
     margin-right: 10px;
+}
+
+
+.dark-mode .theme-toggle{
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+
+.theme-toggle{
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 2px;
 }
