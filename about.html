@@ -24,7 +24,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-
+    <link rel="stylesheet" href="CSS/style.css">
 <style>
 
 /* =========================
@@ -1265,7 +1265,7 @@ img {
     /* ABOUT HERO */
 
     .about-hero {
-        padding: 32px 0 40px;
+        padding: 70px 0 40px;
     }
 
     .about-hero-inner {
@@ -1559,6 +1559,149 @@ img {
 
 }
 
+
+
+.theme-toggle {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 50%;
+    background: #e5f2e4;
+    color: #16482c;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: rotate(15deg);
+}
+
+
+
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode {
+    background: #101a13;
+    color: #e5eee6;
+}
+
+/* HEADER */
+
+.dark-mode .site-header,
+.dark-mode .main-nav {
+    background: #17251b;
+    border-color: #304333;
+}
+
+.dark-mode .brand,
+.dark-mode .main-nav a {
+    color: #e5eee6;
+}
+
+/* MAIN BACKGROUNDS */
+
+.dark-mode .about-hero,
+.dark-mode .craft-section,
+.dark-mode .process-section,
+.dark-mode .difference-section {
+    background: #101a13;
+}
+
+.dark-mode .artisans-section,
+.dark-mode .footer {
+    background: #17251b;
+}
+
+/* HEADINGS */
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #e5eee6;
+}
+
+/* PARAGRAPHS */
+
+.dark-mode p,
+.dark-mode .story-label,
+.dark-mode .craft-number,
+.dark-mode .artisan-role,
+.dark-mode .process-label {
+    color: #b2c1b5;
+}
+
+/* CARDS */
+
+.dark-mode .about-stat,
+.dark-mode .community-card,
+.dark-mode .craft-card,
+.dark-mode .artisan-card,
+.dark-mode .process-content,
+.dark-mode .certification-strip {
+    background: #1d2c21;
+    border-color: #304333;
+}
+
+/* CARD TEXT */
+
+.dark-mode .about-stat strong,
+.dark-mode .community-card strong,
+.dark-mode .artisan-link,
+.dark-mode .certification-strip a {
+    color: #a8dcae;
+}
+
+/* ICONS */
+
+.dark-mode .craft-icon,
+.dark-mode .community-icon,
+.dark-mode .social-links a,
+/* .dark-mode .theme-toggle, */
+.dark-mode .menu-button {
+    background: #304b35;
+    color: #e5eee6;
+}
+
+/* PROCESS TABS */
+
+.dark-mode .process-tab {
+    background: #1d3022;
+    color: #e5eee6;
+}
+
+.dark-mode .process-tab.active,
+.dark-mode .process-tab:hover {
+    background: #39734a;
+    color: white;
+}
+
+/* MISSION AND FINAL CTA */
+
+.dark-mode .mission-box,
+.dark-mode .difference-box {
+    background: #1b3d27;
+}
+
+/* BUTTONS */
+
+.dark-mode .contact-button {
+    background: #39734a;
+    color: white;
+}
+
+/* FOOTER */
+
+.dark-mode .footer-bottom {
+    border-color: #304333;
+    color: #b2c1b5;
+}
 </style>
 
 </head>
@@ -1608,6 +1751,10 @@ img {
 
             <a href="contact.html">Contact Us</a>
 
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Switch theme">
+            <i class="fa-solid fa-moon"></i>
+            </button>
         </nav>
 
 
@@ -2852,6 +2999,8 @@ img {
 
 </footer>
 
+
+<script src="JS/script.js"></script>
 
 </body>
 

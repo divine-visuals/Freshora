@@ -15,7 +15,20 @@ body {
     color: #173b28;
     background: #eff9ef;
     font-size: 14px;
+
 }
+
+html, body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+img {
+    max-width: 100%;
+}
+
 
 a {
     color: inherit;
@@ -1046,6 +1059,7 @@ img {
 
     .site-header {
         height: 65px;
+        
     }
 
     .header-inner {
@@ -1780,15 +1794,16 @@ color: #ffffff;
 }
 
 
-.header-inner a span {
+/* .header-inner a span {
     margin-right: 10px;
-}
+} */
 
 
 .dark-mode .theme-toggle{
     font-size: 10px;
     margin-top: 20px;
     margin-left: 2px;
+    color: white;
 }
 
 
@@ -1796,4 +1811,5 @@ color: #ffffff;
     font-size: 10px;
     margin-top: 20px;
     margin-left: 2px;
+    margin-bottom: 20px;
 }

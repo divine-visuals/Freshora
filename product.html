@@ -1097,6 +1097,270 @@ img {
 
 }
 
+
+
+
+
+
+
+/* THEME TOGGLE */
+
+.theme-toggle {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 50%;
+    background: #e5f2e4;
+    color: #16482c;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: rotate(15deg);
+}
+
+
+
+
+
+
+
+/* =========================
+   PRODUCTS PAGE DARK MODE
+========================= */
+
+.dark-mode {
+    background: #101a13;
+    color: #e5eee6;
+}
+
+/* HEADER */
+
+.dark-mode .site-header {
+    background: #17251b;
+    border-color: #293c2e;
+}
+
+.dark-mode .brand,
+.dark-mode .main-nav a {
+    color: #e5eee6;
+}
+
+.dark-mode .main-nav a:hover {
+    color: #8fc99a;
+}
+
+.dark-mode .menu-button {
+    background: #263d2c;
+    color: #e5eee6;
+}
+
+.dark-mode .theme-toggle {
+    background: #304735;
+    /* color: #f5d77a; */
+}
+
+/* HERO */
+
+.dark-mode .products-hero {
+    background: #142319;
+}
+
+.dark-mode .products-hero h1 {
+    color: #e7f2e8;
+}
+
+.dark-mode .products-hero p {
+    color: #b1c2b3;
+}
+
+.dark-mode .eyebrow {
+    background: #263d2c;
+    color: #b9dfbd;
+}
+
+/* FILTERS */
+
+.dark-mode .filter-list a {
+    background: #24372a;
+    color: #d4e5d6;
+}
+
+.dark-mode .filter-list a.active,
+.dark-mode .filter-list a:hover {
+    background: #397b4b;
+    color: white;
+}
+
+/* TRUST BADGES */
+
+.dark-mode .trust-box {
+    background: #1c2c20;
+    border-color: #304333;
+}
+
+.dark-mode .trust-box strong {
+    color: #e1eee2;
+}
+
+.dark-mode .trust-box small {
+    color: #a9bbaa;
+}
+
+.dark-mode .trust-box i {
+    color: #91c99a;
+}
+
+/* PRODUCT SECTION */
+
+.dark-mode .product-section,
+.dark-mode .callout-section {
+    background: #101a13;
+}
+
+.dark-mode .product-heading h2 {
+    color: #e5eee6;
+}
+
+.dark-mode .product-heading p {
+    color: #aebdaf;
+}
+
+.dark-mode .selected-products {
+    background: #263d2c;
+    color: #c8e6cc;
+}
+
+/* PRODUCT CARDS */
+
+.dark-mode .product-card {
+    background: #1a291e;
+    border-color: #304333;
+}
+
+.dark-mode .product-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.dark-mode .product-image {
+    background: #26382a;
+}
+
+.dark-mode .product-tag {
+    background: rgba(20, 35, 24, 0.95);
+    color: #d8edda;
+}
+
+.dark-mode .product-label {
+    background: #315c3b;
+    color: #e2f4e4;
+}
+
+.dark-mode .category {
+    color: #9dbca1;
+}
+
+.dark-mode .product-info h3 {
+    color: #e5eee6;
+}
+
+.dark-mode .product-info > p {
+    color: #b0beb2;
+}
+
+/* PRODUCT PRICE */
+
+.dark-mode .product-bottom {
+    border-color: #354538;
+}
+
+.dark-mode .product-price small {
+    color: #a9b9ab;
+}
+
+.dark-mode .product-price strong {
+    color: #b5e0bb;
+}
+
+.dark-mode .product-bottom a {
+    background: #294532;
+    color: #d9eddb;
+}
+
+.dark-mode .product-bottom a:hover {
+    background: #397b4b;
+    color: white;
+}
+
+/* WHOLESALE SECTION */
+
+.dark-mode .callout {
+    background: #173e26;
+}
+
+/* FOOTER */
+
+.dark-mode .footer {
+    background: #17251b;
+}
+
+.dark-mode .footer-about > p,
+.dark-mode .footer-column > a,
+.dark-mode .footer-column > p {
+    color: #b2c1b4;
+}
+
+.dark-mode .footer-column h3 {
+    color: #e5eee6;
+}
+
+.dark-mode .social-links a {
+    background: #293e2e;
+    color: #c8e6cc;
+}
+
+.dark-mode .social-links a:hover {
+    background: #397b4b;
+    color: white;
+}
+
+.dark-mode .contact-details i {
+    color: #91c99a;
+}
+
+.dark-mode .hours b {
+    color: #c5d9c8;
+}
+
+.dark-mode .footer-bottom {
+    border-color: #344637;
+    color: #aebdaf;
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 650px) {
+
+    .dark-mode .main-nav {
+        background: #17251b;
+        border-color: #304333;
+    }
+
+    .dark-mode .main-nav a {
+        border-color: #304333;
+    }
+
+}
+
+
+/* .dark-mode .theme-toggle{
+    color: white;
+} */
+
 </style>
 
 </head>
@@ -1144,6 +1408,10 @@ img {
             <a href="about.html">About Us</a>
 
             <a href="contact.html">Contact Us</a>
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Switch theme">
+            <i class="fa-solid fa-moon"></i>
+            </button>
 
         </nav>
 
@@ -2252,6 +2520,50 @@ img {
 
 </footer>
 
+
+
+<script>
+
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = themeToggle.querySelector("i");
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("freshora-theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+
+    // Update icon
+    function updateThemeIcon() {
+        if (document.body.classList.contains("dark-mode")) {
+            themeIcon.className = "fa-solid fa-sun";
+        } else {
+            themeIcon.className = "fa-solid fa-moon";
+        }
+    }
+
+    updateThemeIcon();
+
+    // Switch theme
+    themeToggle.addEventListener("click", function () {
+
+        document.body.classList.toggle("dark-mode");
+
+        const isDark = document.body.classList.contains("dark-mode");
+
+        localStorage.setItem(
+            "freshora-theme",
+            isDark ? "dark" : "light"
+        );
+
+        updateThemeIcon();
+
+    });
+
+</script>
+
+<script src="JS/script.js"></script>
 
 </body>
 
