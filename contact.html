@@ -1740,7 +1740,7 @@ footer {
 
                 <div class="form-bottom">
 
-                    <button type="submit" class="send-btn" onclick="sendWhatsapp()">
+                    <button type="button" class="send-btn" onclick="sendWhatsapp()">
 
                         <i class="fa-regular fa-paper-plane"></i>
                         Send Message
@@ -2083,21 +2083,32 @@ footer {
 
 <script>
 
-function sendMessage() {
+function sendWhatsapp() {
 
+    // Collect customer's information
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
+    let inquiry = document.querySelector('[name="inquiry"]').value;
     let message = document.getElementById("message").value;
 
-    let whatsappMessage = "Hello Freshora!\n\n" +
-                          "Name: " + name + "\n" +
-                          "Email: " + email + "\n" +
-                          "Message: " + message;
+    // Arrange information in an array
+    let details = [
+        "Full Name: " + name,
+        "Email: " + email,
+        "Inquiry: " + inquiry,
+        "Message: " + message
+    ];
 
+    // Create WhatsApp message
+    let whatsappMessage = "Hello Freshora!\n\n" + details.join("\n\n");
+
+    // Your WhatsApp number
     let phone = "2347049075862";
 
+    // Create WhatsApp link
     let link = "https://wa.me/" + phone + "?text=" + encodeURIComponent(whatsappMessage);
 
+    // Open WhatsApp
     window.open(link, "_blank");
 
 }
