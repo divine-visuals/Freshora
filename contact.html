@@ -2085,19 +2085,29 @@ footer {
 
 function sendWhatsApp() {
 
+    // Collect form information
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
 
-    let text = `Hello Freshora!
+    // Store information in an array
+    let details = [
+        "Name: " + name,
+        "Email: " + email,
+        "Message: " + message
+    ];
 
-Name: ${name}
-Email: ${email}
-Message: ${message}`;
+    // Arrange the WhatsApp message
+    let text = "Hello Freshora!\n\n" + details.join("\n");
 
+    // Your WhatsApp number
     let phone = "2347049075862";
 
-    window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(text));
+    // Create WhatsApp link
+    let whatsappLink = "https://wa.me/" + phone + "?text=" + encodeURIComponent(text);
+
+    // Open WhatsApp
+    window.location.href = whatsappLink;
 
 }
 
