@@ -33,3 +33,28 @@
         }
 
     });
+
+
+
+
+    // =================Contact Page===========================================
+
+
+    function sendWhatsApp() {
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+
+        let text = `Hello Freshora!
+
+    Name: ${name}
+    Email: ${email}
+    Message: ${message}`;
+
+        let phone = "2347049075862";
+
+        window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(text));
+
+    }
+

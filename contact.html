@@ -1607,10 +1607,10 @@ footer {
                         Transit: Orchard Line 12 & Caltrain Depot
                     </span>
 
-                    <!-- <a href="https://maps.google.com/?q=San+Francisco"
+                    <a href="https://maps.google.com/?q=San+Francisco"
                        target="_blank">
                         Open in Map
-                    </a> -->
+                    </a>
 
                 </div>
 
@@ -1639,7 +1639,7 @@ footer {
             </div>
 
 
-            <form action="https://wa.me/2347049075862" method="get" target="_blank">
+            <form action="https://wa.me/2347049075862" method="get" target="_blank" id="form">
 
                 <div class="form-grid">
 
@@ -1654,6 +1654,7 @@ footer {
                             name="fullname"
                             placeholder="Your full name"
                             required
+                            id="name"
                         >
 
                     </div>
@@ -1670,6 +1671,7 @@ footer {
                             name="email"
                             placeholder="elena@example.com"
                             required
+                            id="email"
                         >
 
                     </div>
@@ -1718,6 +1720,7 @@ footer {
                         name="message"
                         placeholder="Tell us about your event, delivery date requirement, dietary question, or partnership idea..."
                         required
+                        id="message"
                     ></textarea>
 
                 </div>
@@ -1737,7 +1740,7 @@ footer {
 
                 <div class="form-bottom">
 
-                    <button type="submit" class="send-btn">
+                    <button type="submit" class="send-btn" onclick="sendWhatsapp()">
 
                         <i class="fa-regular fa-paper-plane"></i>
                         Send Message
@@ -1750,14 +1753,14 @@ footer {
                     </span>
 
                 </div>
-
             </form>
-
+            
         </div>
-
-
+        
+        
     </div>
-
+    
+    
 </section>
 
 
