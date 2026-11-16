@@ -2083,31 +2083,22 @@ footer {
 
 <script>
 
-function sendWhatsApp() {
+function sendMessage() {
 
-    // Collect form information
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
 
-    // Store information in an array
-    let details = [
-        "Name: " + name,
-        "Email: " + email,
-        "Message: " + message
-    ];
+    let whatsappMessage = "Hello Freshora!\n\n" +
+                          "Name: " + name + "\n" +
+                          "Email: " + email + "\n" +
+                          "Message: " + message;
 
-    // Arrange the WhatsApp message
-    let text = "Hello Freshora!\n\n" + details.join("\n");
-
-    // Your WhatsApp number
     let phone = "2347049075862";
 
-    // Create WhatsApp link
-    let whatsappLink = "https://wa.me/" + phone + "?text=" + encodeURIComponent(text);
+    let link = "https://wa.me/" + phone + "?text=" + encodeURIComponent(whatsappMessage);
 
-    // Open WhatsApp
-    window.location.href = whatsappLink;
+    window.open(link, "_blank");
 
 }
 
